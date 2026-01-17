@@ -12,8 +12,8 @@ import java.time.LocalDateTime
 @Table(name = "activities")
 class Activity(
 
-    @Column(name = "occured_at")
-    var occuredAt: LocalDateTime,
+    @Column(name = "occurred_at")
+    var occurredAt: LocalDateTime,
 
     @Column(name = "event")
     var event: String
