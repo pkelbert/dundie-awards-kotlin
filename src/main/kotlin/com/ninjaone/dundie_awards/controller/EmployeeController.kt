@@ -35,6 +35,9 @@ class EmployeeController(
     }
 
     // create employee rest api
+    // todo requires id to be null
+    // todo requires organization to exist
+    // todo organization name is useless
     @PostMapping("/employees")
     @ResponseBody
     fun createEmployee(@RequestBody employee: Employee): Employee {
@@ -54,6 +57,7 @@ class EmployeeController(
     }
 
     // update employee rest api
+    // todo actually performs a patch
     @PutMapping("/employees/{id}")
     @ResponseBody
     fun updateEmployee(@PathVariable id: Long, @RequestBody employeeDetails: Employee): ResponseEntity<Employee> {
